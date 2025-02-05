@@ -1,0 +1,58 @@
+:root {
+  --primary-text-clr : rgb(102, 102, 102);
+}
+
+@font-face {
+    font-family: "OdinFont";
+    src: url("resources/Norse-Bold.otf");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+  font-size: clamp(0.8rem, 4vh, 2rem);
+  display:flex;
+  flex-direction: row;
+}
+
+#leftSideBar {
+  height:100%;
+  width:300px;
+  background: url("resources/ferns.jpg") center no-repeat;
+  background-size:cover;
+  position: relative;
+  opacity: 0.9;
+  color: white;
+}
+
+#leftSideBar div {
+    position:absolute;
+}
+
+#odinLogo {
+    background: url("resources/odin-lined.png") center no-repeat;
+    background-size: cover;
+    height:100px;
+    width:100px;
+}
+
+#odinLogoText {
+    right:0;
+}
+
+#odinLogoBox {
+    margin:30px;
+    height:auto;
+    top:50;
+    font-family: "OdinFont";
+    font-size: 50px;
+}
+
+#creditContainer {
+    text-align: center;
+    font-size: clamp(1rem, 3vh, 1rem);
+    bottom:0;
+}
+
