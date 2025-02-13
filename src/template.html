@@ -15,25 +15,54 @@
       <div id="creditContainer"><p id="credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p></div>
     </div>
   </section>
+  <section id="rightSection">
   <section id="descriptionText">
     <div id="topDescriptionText">
       <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p></p>
-      <p>You know you want to</p>
+      <p>You <i>know</i> you want to</p>
     </div>
   </section>
   <section id="form">
     <div id="formBox">
-      <p>Let's do this.</p>
-      <label name="first_name">FIRST NAME</label>
-      <input type="text" id="first_name" name="first_name">
+      <p id="letDoThis">Let's do this.</p>
+      <form id="signUpForm">
+      <div class="col">
+        <div class="formField">
+          <label name="first_name">FIRST NAME</label>
+          <input type="text" id="first_name" placeholder="Thor" name="first_name" required>
+        </div>
+        <div class="formField">
+          <label name="mail">EMAIL</label>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+        <div class="formField">
+          <label name="password">PASSWORD</label>
+          <input type="password"  minlength="6" maxlength="12" class="password" name="password" required>
+        </div>
+      </div>
+      <div class="col">
+        <div class="formField">
+          <label name="last_name">LAST NAME</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
+        </div>
+          <div class="formField">
+          <label name="phone_number">EMAIL</label>
+          <input type="number" id="phone_number" name="phone_number" required>
+        </div>
+        <div class="formField">
+          <label name="password_confirm">CONFIRM PASSWORD</label>
+          <input type="password" class="password" name="password_confirm" required>
+        </div>
+      </div>
+      </form>
     </div>
   </section>
   <section id="bottomButton">
     <div id="submitFormContainer">
-
-      <button type="submit">Create Account</button>
+      <button type="submit" id="createAcc">Create Account</button>
       <p>Do you already have an account?<a>Sign in</a></p>
     </div>
   </section>
+</section>
   </body>
 </html>

@@ -12,14 +12,14 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family:'Courier New', Courier, monospace;
-  font-size: clamp(0.8rem, 4vh, 2rem);
+  font-size: clamp(0.8rem, 3vh, 2rem);
   display:flex;
   flex-direction: row;
 }
 
 #leftSideBar {
-  height:100%;
-  width:300px;
+  height:100vh;
+  width:400px;
   background: url("resources/ferns.jpg") center no-repeat;
   background-size:cover;
   position: relative;
@@ -27,32 +27,116 @@ body {
   color: white;
 }
 
-#leftSideBar div {
-    position:absolute;
+#rightSection {
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+#formBox {
+    border-top: 1px rgb(110, 110, 110);
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px rgb(209, 209, 209);
+    margin-left: 0px;
+    padding-left:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col {
+    width:250px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+label {
+    font-size: 10px;
+    display: block;
+}
+
+input {
+    display: block;
+    width: 150px;
+    height: 20px;
+    border-radius: 5%;
+    border: 1px solid #E5E7EB;
+}
+
+.formField {
+    margin-top: 10px;
+    width:200px;
+    text-align: left;
+}
+
+.password:invalid {
+    border-color: red;
+}
+
+input:focus {
+    box-shadow: 0px 2px 3px rgb(196, 194, 194);
+    border: blue solid 1px;
+    outline:none;
+}
+
+#submitFormContainer {
+    margin:30px;
+}
+
+button {
+    height:30px;
+    width:150px;
+    border:none;
+    border-radius: 10%;
+    color: white;
+
 }
 
 #odinLogo {
     background: url("resources/odin-lined.png") center no-repeat;
-    background-size: cover;
-    height:100px;
-    width:100px;
+    background-size:contain;
+    height:150px;
+    width:150px;
+    left:50px;
+    top:25px;
+    position:relative;
 }
 
 #odinLogoText {
-    right:0;
+    position:relative;
+    bottom:190px;
+    left:200px;
+    width:100px;
 }
 
 #odinLogoBox {
-    margin:30px;
-    height:auto;
-    top:50;
+    height:200px;
+    width:400px;
     font-family: "OdinFont";
-    font-size: 50px;
+    font-size: 70px;
+    background-color: black;
+    opacity: 0.5;
+    top: 200px;
+    position: relative;
 }
 
 #creditContainer {
+    position:absolute;
     text-align: center;
     font-size: clamp(1rem, 3vh, 1rem);
     bottom:0;
 }
 
+#topDescriptionText {
+    padding: 20px;
+}
+
+#createAcc {
+    background-color: #596D48;
+}
